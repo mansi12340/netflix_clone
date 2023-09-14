@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header style="box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); padding: 20px;">
+        <div class="logo">
+            <img src="netflix.webp" alt="Netflix Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">TV Shows</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">My List</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <section class="hero" style="background-image: url('hero.jpg'); background-size: cover;  padding: 150px 20px;">
+            <div class="hero-text" style="max-width: 60%; text-align: left;">
+                <h1 style="font-size: 2.5rem; margin-bottom: 20px;">Unlimited Movies, TV Shows, and More.</h1>
+                <p style="font-size: 1.2rem; margin-bottom: 20px;">Watch anywhere. Cancel anytime.</p>
+                <button
+                    style="padding: 10px 20px; background-color: #e50914; color: #fff; border: none; border-radius: 5px; font-size: 1rem; cursor: pointer;">
+                    Sign Up
+                </button>
+            </div>
+        </section>
+
+        <!-- Movie Recommendations Section -->
+        <section class="movie-recommendations">
+            <h2 style="font-size: 1.5rem;">Popular on Netflix</h2>
+            <div class="movie-list" style="display: flex; flex-direction: column;">
+                <!-- Individual movie items go here -->
+                <div class="movie-item" style="margin-bottom: 20px; display: flex; align-items: center;">
+                    <img src="gaslight.jpg" alt="Gaslight" style="margin-right: 10px;">
+                    <p>Gaslight</p>
+                </div>
+                <div class="movie-item" style="margin-bottom: 20px; display: flex; align-items: center;">
+                    <img src="sheershaah.jpg" alt="Shershaah" style="margin-right: 10px;">
+                    <p>Shershaah</p>
+                </div>
+
+                <!-- Add more movie items as needed -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer style="text-align: center; padding: 20px; background-color: #000; color: #fff;">
+        <p>&copy; 2023 Netflix Clone</p>
+    </footer>
+</body>
+
+</html>
+
+<style>
+    /* Your CSS styles go here */
+    /* ... */
+    /* Reset some default styles */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* Set background color and font for the entire page */
+    body {
+        background-color: #111;
+        font-family: Arial, sans-serif;
+        color: #fff;
+    }
+
+    /* Style the header */
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0%;
+        background-color: #000;
+        position: fixed;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .logo img {
+        width: 60px;
+        /* Adjust logo size as needed */
+    }
+
+
+
+    nav ul {
+        list-style: none;
+        display: flex;
+    }
+
+    nav li {
+        margin-right: 20px;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+        transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+        color: #e50914;
+        /* Netflix red */
+    }
+
+    /* Navigation bar hover effect */
+    nav a:hover {
+        color: #ff3f36;
+        /* Change color on hover */
+    }
+
+    /* Change background color when scrolling */
+    header.scrolled {
+        background-color: rgba(0, 0, 0, 0.9);
+        /* Adjust opacity as needed */
+    }
+
+    /* Make the navigation bar sticky */
+    header.sticky {
+        position: fixed;
+        top: 0;
+    }
+    .sheershaah {
+        max-width: 100%;
+    }
+
+    /* Style the hero section */
+    .hero {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 100px 20px;
+        background-image: url('hero.jpg');
+        /* Replace with your image URL */
+        background-size: cover;
+        color: #100f0f;
+    }
+
+    .hero-text {
+        max-width: 50%;
+        text-align: left;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+    }
+
+    .hero button {
+        padding: 10px 20px;
+        background-color: #e50914;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+
+    .hero button:hover {
+        background-color: #ff3f36;
+        /* Lighter red on hover */
+    }
+
+    /* Style the footer */
+    footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #000;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+    }
+
+    /* Mobile-first styles */
+    /* ... */
+
+    /* Tablet and larger screens */
+    @media (min-width: 768px) {
+        /* Adjust styles for tablets and larger screens */
+    }
+
+    /* Desktop screens */
+    @media (min-width: 1024px) {
+        /* Adjust styles for desktop screens */
+    }
+
+    @font-face {
+        font-family: 'CustomFont';
+        src: url('path/to/custom-font.woff') format('woff');
+        /* Add other font formats as needed */
+    }
+
+    /* Use the custom font for specific elements */
+    body {
+        font-family: 'CustomFont', Arial, sans-serif;
+    }
+</style>
